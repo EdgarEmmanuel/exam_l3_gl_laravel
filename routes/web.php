@@ -31,4 +31,5 @@ Route::get('/', function () {
 
 
 Route::get('/register', [RegisterController::class, 'show']);
-Route::post('register_form', [RegisterController::class, 'register_form_process']);
+
+Route::post('/register_form', [RegisterController::class, 'register_form_process']);

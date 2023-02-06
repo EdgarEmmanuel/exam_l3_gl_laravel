@@ -8,7 +8,7 @@
   </section>
   
   <div class="container">  
-    <form id="contact" action="" method="post" action="{{url('register_form')}}">
+    <form id="contact" method="post" action="/register_form">
       @csrf
       <fieldset>
         <label> Le Nom : </label>
