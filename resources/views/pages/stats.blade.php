@@ -8,4 +8,10 @@
   </section>
 
 
+  <h1>
+    L'etudiant qui est le premier de la classe est {{ $etudiant->name }} {{ $etudiant->surname}}
+    avec une moyenne de {{ $etudiant->moyenne}} /20 
+  </h1>
+
+
 @endsection

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use  App\Models\matiere;
 use  App\Models\semestre;
 use App\Models\etudiants;
+use Illuminate\Support\Facades\DB;
 
 
 class RegisterController extends Controller
@@ -49,7 +50,11 @@ class RegisterController extends Controller
      * @return void
      */
     public function showStats(){
-        return view("pages.stats");
+
+        $etudiant = DB::select('select surname , name, ((AVG(exam_note) + AVG(note_one)) / 2 ) as moyenne from etudiants group by name, surname order by moyenne desc limit 1');
+
+        //dd($etudiant[0]->name);
+        return view("pages.stats")->with(["etudiant" => $etudiant[0]]);
     }
 
 
