@@ -447,20 +447,18 @@ td {
     <body>
         <header role="banner">
             <h1>Admin Panel</h1>
-            <ul class="utilities">
+            {{-- <ul class="utilities">
               <br>
               <li class="users"><a href="#">My Account</a></li>
               <li class="logout warn"><a href="">Log Out</a></li>
-            </ul>
+            </ul> --}}
           </header>
           
           <nav role='navigation'>
             <ul class="main">
-              <li class="dashboard"><a href="admindashboard">Dashboard</a></li>
-              <li class="edit"><a href="#">Edit Website</a></li>
-              <li class="write"><a href="#">Write news</a></li>
-              <li class="comments"><a href="#">Ads</a></li>
-              <li class="users"><a href="#">Manage Users</a></li>
+              <li class="edit"><a href="#">Enregistrement</a></li>
+              <li class="write"><a href="#">Liste Enregistrements</a></li>
+              <li class="comments"><a href="#">Statistiques</a></li>
             </ul>
           </nav>
           
