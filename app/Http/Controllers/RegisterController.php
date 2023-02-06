@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use  App\Models\matiere;
 use  App\Models\semestre;
+use App\Models\etudiants;
 
 
 class RegisterController extends Controller

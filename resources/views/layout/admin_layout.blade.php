@@ -448,7 +448,7 @@ td {
     </head>
     <body>
         <header role="banner">
-            <h1>Admin Panel</h1>
+            <h1>Administration School</h1>
             {{-- <ul class="utilities">
               <br>
               <li class="users"><a href="#">My Account</a></li>
