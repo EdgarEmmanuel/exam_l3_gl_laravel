@@ -23,14 +23,11 @@ class CreateEtudiantsTable extends Migration
 
             // relationships with matieres table
             $table->unsignedBigInteger('matiere_id');
-            $table->foreign('matiere_id')->references('id')->on('matieres')
-            ->cascadeOnUpdate()->nullOnDelete();
+            $table->foreign('matiere_id')->references('id')->on('matieres');
 
             // relationship with semestres table
             $table->unsignedBigInteger('semestre_id');
-            $table->foreign('semestre_id')->references('id')->on('semestres')
-                ->cascadeOnUpdate()
-                ->nullOnDelete();
+            $table->foreign('semestre_id')->references('id')->on('semestres');
 
             $table->timestamps();
         });
