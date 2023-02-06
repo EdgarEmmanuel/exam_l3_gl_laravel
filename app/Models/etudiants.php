@@ -14,4 +14,13 @@ class etudiants extends Model
     {
         return $this->belongsTo(semestre::class);
     }
+
+
+    public function matiere()
+    {
+        return $this->belongsTo(matiere::class);
+    }
+
+
+
 }

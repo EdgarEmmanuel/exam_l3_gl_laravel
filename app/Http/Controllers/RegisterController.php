@@ -27,13 +27,10 @@ class RegisterController extends Controller
 
     public function showList()
     {
-        $etudiants = etudiants::all();
+        $etudiants = etudiants::with("semestre")-> with("matiere") ->get();
 
 
-        dd($etudiants);
-
-
-        return view('pages.list', [
+        return view('pages.list')->with([
             'etudiants' => $etudiants,
         ]);
     }
