@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use  App\Models\matiere;
 use  App\Models\semestre;
 
+
 class RegisterController extends Controller
 {
     public function show()
@@ -14,12 +15,17 @@ class RegisterController extends Controller
         $semestres = semestre::all() ;
 
 
-        dd($semestres);
-
-
         return view('pages.register', [
             'matieres' => $matieres,
-            'semetres' => $semestres
+            'semestres' => $semestres
         ]);
     }
+
+
+
+    public function register_form_process(Request $request){
+        dd($request->all());
+    }
+
+
 }

@@ -443,6 +443,8 @@ td {
 }
 
         </style>
+
+        @yield("additional_css")
     </head>
     <body>
         <header role="banner">
