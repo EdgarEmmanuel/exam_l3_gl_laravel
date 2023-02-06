@@ -24,6 +24,26 @@ class RegisterController extends Controller
 
 
 
+
+    public function showList()
+    {
+        $etudiants = etudiants::all();
+
+
+        dd($etudiants);
+
+
+        return view('pages.list', [
+            'etudiants' => $etudiants,
+        ]);
+    }
+
+
+
+
+
+
+
     public function register_form_process(Request $request){
         //dd($request->all());
 
