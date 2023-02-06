@@ -443,9 +443,7 @@ td {
 }
 
         </style>
-
-        @yield("additional_css")
-    </head>
+   </head>
     <body>
         <header role="banner">
             <h1>Administration School</h1>

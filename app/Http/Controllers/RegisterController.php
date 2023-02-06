@@ -25,7 +25,21 @@ class RegisterController extends Controller
 
 
     public function register_form_process(Request $request){
-        dd($request->all());
+        //dd($request->all());
+
+        $etudiant = new etudiants();
+        $etudiant->name = $request->nom ;
+        $etudiant->surname = $request->prenom ;
+        $etudiant->phone_number = $request->phone_number ;
+        $etudiant->note_one = $request->note_one ;
+        $etudiant->exam_note = $request->exam_note ;
+        $etudiant->matiere_id = $request->matiere_id ;
+        $etudiant->semestre_id = $request->semestre_id ;
+
+        $etudiant->save();
+
+
+        return redirect("/register")->with("status", "Enregistrement de L'etudiant Effectuee ");
     }
 
 
