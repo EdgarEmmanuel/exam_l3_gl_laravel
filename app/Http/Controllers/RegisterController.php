@@ -24,7 +24,11 @@ class RegisterController extends Controller
 
 
 
-
+    /**
+     * display the list of registered data
+     *
+     * @return void
+     */
     public function showList()
     {
         $etudiants = etudiants::with("semestre")-> with("matiere") ->get();
@@ -33,6 +37,19 @@ class RegisterController extends Controller
         return view('pages.list')->with([
             'etudiants' => $etudiants,
         ]);
+    }
+
+
+
+
+
+    /**
+     * Show the statistics of the class
+     *
+     * @return void
+     */
+    public function showStats(){
+        return view("pages.stats");
     }
 
 

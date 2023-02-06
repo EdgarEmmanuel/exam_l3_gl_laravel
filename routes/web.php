@@ -34,4 +34,6 @@ Route::get('/register', [RegisterController::class, 'show']);
 
 Route::get('/list_register_data', [RegisterController::class, 'showList']);
 
+Route::get('/statistics', [RegisterController::class, 'showStats']);
+
 Route::post('/register_form', [RegisterController::class, 'register_form_process']);

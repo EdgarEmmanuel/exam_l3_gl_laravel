@@ -458,7 +458,7 @@ td {
             <ul class="main">
               <li class="edit"><a href="/register">Enregistrement</a></li>
               <li class="write"><a href="/list_register_data">Liste Enregistrements</a></li>
-              <li class="comments"><a href="#">Statistiques</a></li>
+              <li class="comments"><a href="/statistics">Statistiques</a></li>
             </ul>
           </nav>
           
